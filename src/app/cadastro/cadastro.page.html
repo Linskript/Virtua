@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cadastro de Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Id do Produto</ion-label>
+    <ion-input [(ngModel)]="novoProduto.produtoId" placeholder="Digite o identificador do produto"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Nome do Produto</ion-label>
+    <ion-input [(ngModel)]="novoProduto.nome" placeholder="Digite o nome"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="cadastrarNovoProduto()">Cadastrar Novo Produto</ion-button>
+</ion-content>
